@@ -4,7 +4,6 @@ project (hello)
 add_executable(hello main.cpp)
 
 find_package(absl REQUIRED CONFIG)
-#add_subdirectory($ENV{ABSL_DIRECTORY}/lib)
 
 target_link_libraries(hello absl::strings)
 
